@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>계정 및 데이터 삭제 — 한림월드</title>
+<style>
+  :root {
+    --zinc-950: #09090B; --zinc-900: #18181B; --zinc-800: #27272A;
+    --zinc-700: #3F3F46; --zinc-500: #71717A; --zinc-400: #A1A1AA;
+    --zinc-300: #D4D4D8; --zinc-50: #FAFAFA;
+    --purple: #8B5CF6; --pink: #EC4899;
+    --error: #EF4444;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: var(--zinc-950); color: var(--zinc-50);
+    font-family: -apple-system, BlinkMacSystemFont, 'Pretendard Variable',
+      'Segoe UI', Roboto, sans-serif;
+    line-height: 1.7; min-height: 100vh;
+  }
+  .container { max-width: 760px; margin: 0 auto; padding: 64px 24px 96px; }
+  .back {
+    display: inline-flex; align-items: center; gap: 6px;
+    color: var(--zinc-400); text-decoration: none; font-size: 13px;
+    margin-bottom: 32px;
+  }
+  .back:hover { color: var(--zinc-50); }
+  h1 { font-size: 32px; font-weight: 700; letter-spacing: -1.2px; margin-bottom: 8px; }
+  .meta { color: var(--zinc-500); font-size: 13px; margin-bottom: 40px; }
+  h2 {
+    font-size: 18px; font-weight: 700;
+    margin: 40px 0 12px;
+    padding-top: 24px;
+    border-top: 1px solid var(--zinc-800);
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; margin-top: 0; }
+  h3 { font-size: 15px; font-weight: 600; margin: 20px 0 8px; color: var(--zinc-300); }
+  p, li { color: var(--zinc-300); font-size: 14px; margin-bottom: 10px; }
+  ul, ol { padding-left: 20px; margin-bottom: 12px; }
+  li { margin-bottom: 8px; }
+  strong { color: var(--zinc-50); font-weight: 600; }
+  code {
+    background: var(--zinc-900); color: var(--zinc-300);
+    padding: 2px 6px; border-radius: 4px; font-size: 13px;
+  }
+  .steps {
+    background: var(--zinc-900); border: 1px solid var(--zinc-800);
+    border-radius: 12px; padding: 20px 24px; margin: 16px 0;
+  }
+  .step-row {
+    display: flex; gap: 16px; align-items: flex-start;
+    padding: 12px 0;
+  }
+  .step-row + .step-row { border-top: 1px solid var(--zinc-800); }
+  .step-num {
+    flex-shrink: 0;
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--purple), var(--pink));
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 13px;
+    color: var(--zinc-50);
+  }
+  .step-text { flex: 1; padding-top: 3px; }
+  .step-text strong { color: var(--zinc-50); }
+  table {
+    width: 100%; border-collapse: collapse;
+    margin: 12px 0; font-size: 13px;
+  }
+  th, td {
+    border-bottom: 1px solid var(--zinc-800);
+    padding: 10px 8px; text-align: left;
+    color: var(--zinc-300);
+  }
+  th { color: var(--zinc-400); font-weight: 500; }
+  a { color: var(--purple); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .warning {
+    background: rgba(239, 68, 68, 0.08);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    border-radius: 10px; padding: 14px 18px; margin: 16px 0;
+    color: var(--zinc-200); font-size: 13px;
+  }
+  .warning strong { color: var(--error); }
+  .mail-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: var(--zinc-50); color: var(--zinc-950);
+    border-radius: 8px; font-weight: 600; font-size: 14px;
+    text-decoration: none;
+    margin-top: 8px;
+  }
+  footer {
+    margin-top: 64px; padding-top: 24px;
+    border-top: 1px solid var(--zinc-800);
+    color: var(--zinc-500); font-size: 12px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <a href="./" class="back">← 법적 고지</a>
+    <h1>계정 및 데이터 삭제</h1>
+    <p class="meta">
+      앱 이름: <strong>한림월드 (Hanlimworld)</strong><br>
+      개발사: Hanlimworld · 연락처:
+      <a href="mailto:support@hanlimworld.com">support@hanlimworld.com</a>
+    </p>
+
+    <p>
+      한림월드 앱 이용자는 언제든지 본인 계정과 관련 데이터의
+      <strong>영구 삭제</strong>를 요청할 수 있습니다. 아래 두 가지 방법 중
+      하나를 선택하세요.
+    </p>
+
+    <h2>방법 1 — 앱 내에서 삭제 (즉시 처리 · 권장)</h2>
+    <div class="steps">
+      <div class="step-row">
+        <div class="step-num">1</div>
+        <div class="step-text">한림월드 앱 실행 → 로그인</div>
+      </div>
+      <div class="step-row">
+        <div class="step-num">2</div>
+        <div class="step-text">하단 탭 <strong>"프로필"</strong> 선택</div>
+      </div>
+      <div class="step-row">
+        <div class="step-num">3</div>
+        <div class="step-text">우측 상단 <strong>설정 아이콘</strong> (톱니바퀴) 탭</div>
+      </div>
+      <div class="step-row">
+        <div class="step-num">4</div>
+        <div class="step-text">스크롤 → <strong>"계정"</strong> 섹션 → <strong>"계정 삭제"</strong> 선택</div>
+      </div>
+      <div class="step-row">
+        <div class="step-num">5</div>
+        <div class="step-text">확인 다이얼로그에서 <strong>"삭제"</strong> 탭 → 즉시 처리 완료</div>
+      </div>
+    </div>
+    <p>
+      삭제가 완료되면 자동으로 로그아웃되며, 해당 계정으로는
+      다시 로그인할 수 없습니다.
+    </p>
+
+    <h2>방법 2 — 이메일로 요청</h2>
+    <p>
+      앱에 접근할 수 없거나 대량 삭제가 필요한 경우
+      아래 이메일로 요청하세요. 영업일 기준 <strong>3일 이내</strong> 처리됩니다.
+    </p>
+    <a class="mail-btn"
+      href="mailto:support@hanlimworld.com?subject=%5B%EA%B3%84%EC%A0%95%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD%5D%20%ED%95%9C%EB%A6%BC%EC%9B%94%EB%93%9C&body=%EA%B0%80%EC%9E%85%20%EC%9D%B4%EB%A9%94%EC%9D%BC%3A%20%0A%EA%B3%84%EC%A0%95%20%EC%83%9D%EC%84%B1%EC%9D%BC(%EB%8C%80%EB%9E%B5)%3A%20%0A%EC%82%AD%EC%A0%9C%20%EC%82%AC%EC%9C%A0(%EC%84%A0%ED%83%9D)%3A%20">
+      support@hanlimworld.com 로 메일 작성
+    </a>
+    <p style="margin-top: 12px;">
+      메일 본문에 다음 정보를 포함해 주세요:
+    </p>
+    <ul>
+      <li>가입 시 사용한 이메일 주소</li>
+      <li>계정 생성일 (대략적인 시점)</li>
+      <li>삭제 사유 (선택)</li>
+    </ul>
+    <p>
+      보안을 위해 <strong>가입 이메일 주소와 동일한 주소에서 발신</strong>된 메일만
+      처리합니다.
+    </p>
+
+    <h2>삭제되는 데이터</h2>
+    <p>요청 즉시 다음 데이터가 영구적으로 삭제됩니다. 복구 불가능합니다.</p>
+    <table>
+      <tr><th>항목</th><th>저장 위치</th></tr>
+      <tr><td>프로필 (이메일, 닉네임, 가입일)</td><td>Supabase <code>profiles</code> 테이블</td></tr>
+      <tr><td>인증 정보 (비밀번호 해시, OAuth 토큰)</td><td>Supabase Auth</td></tr>
+      <tr><td>챌린지 분석 결과 (점수, 관절 데이터)</td><td>Supabase <code>analysis_results</code></td></tr>
+      <tr><td>업로드한 댄스 영상</td><td>Supabase Storage</td></tr>
+      <tr><td>연습 진행률 기록</td><td>Supabase <code>user_progress</code></td></tr>
+      <tr><td>앱 설정 (언어, 알림 등)</td><td>Supabase <code>user_settings</code> + 기기 로컬</td></tr>
+    </table>
+
+    <h2>보관되는 데이터 (법령상 필수)</h2>
+    <p>
+      일부 정보는 관련 법령에 따라 최소한의 기간 동안 보관 후 파기됩니다.
+      이 데이터는 개인 식별 목적이 아닌 법적 의무 이행 용도로만 사용됩니다.
+    </p>
+    <table>
+      <tr><th>데이터</th><th>보관 기간</th><th>근거 법령</th></tr>
+      <tr>
+        <td>서비스 이용 로그 (IP, 접속 시간, 기기 식별자 일부)</td>
+        <td>최대 3개월</td>
+        <td>통신비밀보호법</td>
+      </tr>
+      <tr>
+        <td>계약·청약 철회 관련 기록</td>
+        <td>최대 5년</td>
+        <td>전자상거래법 (현재 앱 내 결제 기능 없어 해당 없음)</td>
+      </tr>
+      <tr>
+        <td>익명 처리된 통계 데이터 (식별 불가 집계)</td>
+        <td>영구</td>
+        <td>서비스 개선 목적 · 개인정보 아님</td>
+      </tr>
+    </table>
+    <p>
+      보관 기간이 경과한 모든 데이터는 자동으로 영구 파기됩니다.
+    </p>
+
+    <h2>제3자 서비스의 데이터 처리</h2>
+    <p>
+      한림월드는 아래 서비스를 처리 위탁 중이며, 계정 삭제 시 한림월드의
+      요청에 따라 해당 서비스에서도 즉시 삭제됩니다.
+    </p>
+    <ul>
+      <li><strong>Supabase</strong>: 데이터베이스 · 인증 · 스토리지</li>
+      <li><strong>Google Cloud Platform</strong>: AI 분석 서버 (영상은 분석 즉시 파기됨)</li>
+      <li><strong>Google OAuth</strong>: Google 로그인 사용 시. 한림월드는 토큰만 삭제하며 Google 계정 자체 삭제는
+        <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google 계정 설정</a>
+        에서 별도 처리해주세요.</li>
+    </ul>
+
+    <div class="warning">
+      <strong>삭제는 되돌릴 수 없습니다.</strong> 분석 결과, 연습 기록, 챌린지 히스토리가
+      모두 영구 삭제되며 복구 불가능합니다. 삭제 후 재가입 시 새 계정으로 처리됩니다.
+    </div>
+
+    <h2>추가 문의</h2>
+    <p>
+      계정·데이터 처리에 대한 추가 문의는 개인정보 보호 책임자에게 연락주세요.
+    </p>
+    <ul>
+      <li>이메일: <a href="mailto:privacy@hanlimworld.com">privacy@hanlimworld.com</a></li>
+      <li>일반 문의: <a href="mailto:support@hanlimworld.com">support@hanlimworld.com</a></li>
+    </ul>
+
+    <footer>© 2026 Hanlimworld · Last updated: 2026-04-23</footer>
+  </div>
+</body>
+</html>
