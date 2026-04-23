@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>개인정보처리방침 — 한림월드</title>
+<style>
+  :root {
+    --zinc-950: #09090B; --zinc-900: #18181B; --zinc-800: #27272A;
+    --zinc-700: #3F3F46; --zinc-500: #71717A; --zinc-400: #A1A1AA;
+    --zinc-300: #D4D4D8; --zinc-50: #FAFAFA;
+    --purple: #8B5CF6; --pink: #EC4899;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: var(--zinc-950); color: var(--zinc-50);
+    font-family: -apple-system, BlinkMacSystemFont, 'Pretendard Variable',
+      'Segoe UI', Roboto, sans-serif;
+    line-height: 1.7; min-height: 100vh;
+  }
+  .container { max-width: 760px; margin: 0 auto; padding: 64px 24px 96px; }
+  .back {
+    display: inline-flex; align-items: center; gap: 6px;
+    color: var(--zinc-400); text-decoration: none; font-size: 13px;
+    margin-bottom: 32px;
+  }
+  .back:hover { color: var(--zinc-50); }
+  h1 { font-size: 32px; font-weight: 700; letter-spacing: -1.2px; margin-bottom: 8px; }
+  .meta { color: var(--zinc-500); font-size: 13px; margin-bottom: 40px; }
+  h2 {
+    font-size: 18px; font-weight: 700;
+    margin: 40px 0 12px;
+    padding-top: 24px;
+    border-top: 1px solid var(--zinc-800);
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; margin-top: 0; }
+  h3 { font-size: 15px; font-weight: 600; margin: 20px 0 8px; color: var(--zinc-300); }
+  p, li { color: var(--zinc-300); font-size: 14px; margin-bottom: 10px; }
+  ul, ol { padding-left: 20px; margin-bottom: 12px; }
+  li { margin-bottom: 6px; }
+  strong { color: var(--zinc-50); font-weight: 600; }
+  code {
+    background: var(--zinc-900); color: var(--zinc-300);
+    padding: 2px 6px; border-radius: 4px; font-size: 13px;
+  }
+  table {
+    width: 100%; border-collapse: collapse;
+    margin: 12px 0; font-size: 13px;
+  }
+  th, td {
+    border-bottom: 1px solid var(--zinc-800);
+    padding: 10px 8px; text-align: left;
+    color: var(--zinc-300);
+  }
+  th { color: var(--zinc-400); font-weight: 500; }
+  a { color: var(--purple); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer {
+    margin-top: 64px; padding-top: 24px;
+    border-top: 1px solid var(--zinc-800);
+    color: var(--zinc-500); font-size: 12px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <a href="./" class="back">← 법적 고지</a>
+    <h1>개인정보처리방침</h1>
+    <p class="meta">시행일: 2026년 4월 23일 · 최종 개정: 2026년 4월 23일</p>
+
+    <p>
+      한림월드(이하 "회사")는 이용자의 개인정보를 중요하게 생각하며,
+      「개인정보 보호법」, 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」,
+      Apple App Store Review Guidelines, Google Play Developer Policy 등
+      관련 법령 및 정책을 준수합니다.
+    </p>
+
+    <h2>1. 수집하는 개인정보 항목</h2>
+    <table>
+      <tr><th>구분</th><th>항목</th><th>수집 시점</th></tr>
+      <tr>
+        <td>필수</td>
+        <td>이메일 주소, 비밀번호(해시), 닉네임</td>
+        <td>회원가입 시</td>
+      </tr>
+      <tr>
+        <td>필수</td>
+        <td>OAuth 식별자 (Google 계정 ID)</td>
+        <td>소셜 로그인 시</td>
+      </tr>
+      <tr>
+        <td>필수</td>
+        <td>댄스 영상, 영상 파일 메타데이터</td>
+        <td>챌린지 영상 업로드 시</td>
+      </tr>
+      <tr>
+        <td>자동</td>
+        <td>AI 분석 결과 (점수, 관절 포인트, 박자 정확도)</td>
+        <td>분석 처리 시</td>
+      </tr>
+      <tr>
+        <td>자동</td>
+        <td>서비스 이용 기록 (로그인, 챌린지 시도 횟수, 연속 출석일)</td>
+        <td>서비스 이용 중</td>
+      </tr>
+    </table>
+
+    <h2>2. 개인정보 수집 및 이용 목적</h2>
+    <ul>
+      <li>회원 식별 및 본인 확인</li>
+      <li>AI 댄스 분석 서비스 제공 (영상 업로드 → 관절 추적 → 유사도 비교 → 점수 산출)</li>
+      <li>챌린지 참여 기록 관리 및 개인화된 피드백</li>
+      <li>서비스 개선, 버그 수정, 통계 분석 (식별 불가능 형태로 집계)</li>
+      <li>고객 지원 및 문의 응대</li>
+      <li>부정 이용 방지 및 약관 위반 대응</li>
+    </ul>
+
+    <h2>3. 개인정보 보유 및 이용 기간</h2>
+    <p>
+      회사는 이용자의 동의를 받아 수집한 개인정보를 <strong>회원 탈퇴 시까지</strong>
+      보유·이용합니다. 탈퇴 즉시 모든 식별 가능한 데이터(프로필, 분석 결과, 연습 기록)는
+      데이터베이스에서 영구 삭제되며, 서버 로그는 90일 내 자동 폐기됩니다.
+    </p>
+    <p>
+      단, 다음과 같이 관계 법령에 따라 일정 기간 보존이 필요한 정보는
+      해당 기간 동안 보존 후 파기합니다:
+    </p>
+    <ul>
+      <li>전자상거래법 — 계약/청약 철회 기록: 5년 (현재 앱 내 결제 기능 없음)</li>
+      <li>통신비밀보호법 — 서비스 이용 로그: 3개월</li>
+    </ul>
+
+    <h2>4. 개인정보의 제3자 제공 및 처리 위탁</h2>
+    <p>
+      회사는 이용자의 개인정보를 <strong>제3자에게 판매·제공하지 않습니다.</strong>
+      다만 서비스 운영을 위해 아래와 같이 처리 위탁하고 있습니다:
+    </p>
+    <table>
+      <tr><th>수탁자</th><th>위탁 목적</th><th>처리 데이터</th></tr>
+      <tr>
+        <td>Supabase Inc.</td>
+        <td>데이터베이스 · 인증 · 스토리지 호스팅</td>
+        <td>회원 정보, 분석 결과, 업로드 영상</td>
+      </tr>
+      <tr>
+        <td>Google Cloud Platform</td>
+        <td>AI 댄스 분석 서버 (MediaPipe BlazePose)</td>
+        <td>업로드 영상(처리 후 즉시 삭제), 관절 keypoint</td>
+      </tr>
+      <tr>
+        <td>Google LLC (OAuth)</td>
+        <td>Google 로그인 인증</td>
+        <td>이메일, OAuth 식별자</td>
+      </tr>
+    </table>
+    <p>
+      모든 수탁자는 개인정보 보호 조치를 취하며, 위탁 목적 외 사용하지 않습니다.
+      위탁 계약 상세는 요청 시 공개합니다.
+    </p>
+
+    <h2>5. 국외 이전</h2>
+    <p>
+      일부 처리 위탁 서비스(Supabase, Google Cloud)는 이용자의 개인정보를
+      한국 외 지역(미국, 싱가포르)에서 처리할 수 있습니다. 이는 서비스 제공에
+      필요한 최소한의 범위이며, 해당 국가의 데이터 보호 법률 및 각 업체의
+      국제 개인정보 보호 인증(ISO 27001, SOC 2 등)에 따라 안전하게 관리됩니다.
+    </p>
+
+    <h2>6. 이용자의 권리</h2>
+    <p>회원은 언제든지 아래 권리를 행사할 수 있습니다:</p>
+    <ul>
+      <li><strong>조회·수정</strong>: 앱 내 "설정 → 프로필"에서 본인 정보 확인·수정</li>
+      <li><strong>삭제 (탈퇴)</strong>: 앱 내 "설정 → 계정 → 계정 삭제"에서 즉시 탈퇴</li>
+      <li><strong>처리 정지·동의 철회</strong>:
+        <code>support@hanlimworld.com</code>으로 요청</li>
+      <li><strong>열람 청구</strong>: 보유 중인 본인 개인정보의 사본 요청 가능</li>
+    </ul>
+
+    <h2>7. 개인정보의 파기 절차 및 방법</h2>
+    <ul>
+      <li><strong>전자적 파일</strong>: DB DELETE + 복구 불가능한 로우레벨 삭제</li>
+      <li><strong>종이 문서</strong>: 분쇄 또는 소각 (현재 수집 시 해당 없음)</li>
+      <li><strong>파기 시점</strong>: 탈퇴 즉시 (사후 보존 대상 제외)</li>
+    </ul>
+
+    <h2>8. 개인정보 보호를 위한 기술적·관리적 조치</h2>
+    <ul>
+      <li>전송 구간: TLS 1.2+ HTTPS 암호화</li>
+      <li>저장: 데이터베이스 at-rest 암호화 (AES-256)</li>
+      <li>비밀번호: 단방향 해시(bcrypt) 저장, 원문 비보관</li>
+      <li>접근 통제: Supabase Row-Level Security 정책으로 본인 데이터만 접근</li>
+      <li>로그 모니터링: 비정상 접근 탐지 시 자동 차단</li>
+    </ul>
+
+    <h2>9. 만 14세 미만 아동의 개인정보 보호</h2>
+    <p>
+      회사는 만 14세 미만 아동의 개인정보를 수집하지 않습니다.
+      만 14세 미만 아동이 회원가입을 시도하는 경우 가입이 차단되며,
+      실수로 가입된 경우 법정대리인의 요청으로 즉시 삭제됩니다.
+    </p>
+
+    <h2>10. 쿠키 및 유사 기술</h2>
+    <p>
+      본 앱은 서비스 제공을 위해 세션 토큰(JWT)과 로컬 스토리지(SharedPreferences)
+      를 사용합니다. 마케팅·광고 목적의 추적 쿠키나 3rd-party 트래커는
+      사용하지 않습니다.
+    </p>
+
+    <h2>11. 개인정보 보호 책임자</h2>
+    <ul>
+      <li>책임자: 한림월드 개인정보보호팀</li>
+      <li>이메일: <a href="mailto:privacy@hanlimworld.com">privacy@hanlimworld.com</a></li>
+      <li>일반 문의: <a href="mailto:support@hanlimworld.com">support@hanlimworld.com</a></li>
+    </ul>
+
+    <h2>12. 방침의 변경</h2>
+    <p>
+      법령이나 서비스 변경으로 본 방침을 수정하는 경우, 시행 7일 전
+      앱 공지사항과 이메일로 안내합니다. 중대한 변경은 30일 전 안내합니다.
+    </p>
+
+    <h2>부칙</h2>
+    <p>본 방침은 2026년 4월 23일부터 시행합니다.</p>
+
+    <footer>© 2026 Hanlimworld · support@hanlimworld.com</footer>
+  </div>
+</body>
+</html>

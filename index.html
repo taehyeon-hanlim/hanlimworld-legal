@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한림월드 — 법적 고지</title>
+<style>
+  :root {
+    --zinc-950: #09090B;
+    --zinc-900: #18181B;
+    --zinc-800: #27272A;
+    --zinc-700: #3F3F46;
+    --zinc-500: #71717A;
+    --zinc-400: #A1A1AA;
+    --zinc-300: #D4D4D8;
+    --zinc-50: #FAFAFA;
+    --purple: #8B5CF6;
+    --pink: #EC4899;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: var(--zinc-950);
+    color: var(--zinc-50);
+    font-family: -apple-system, BlinkMacSystemFont, 'Pretendard Variable',
+      'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 80px 24px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 48px;
+  }
+  .brand-mark {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--purple), var(--pink));
+  }
+  .brand-name {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--zinc-300);
+    letter-spacing: -0.2px;
+  }
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    margin-bottom: 12px;
+  }
+  .subtitle {
+    color: var(--zinc-400);
+    font-size: 15px;
+    margin-bottom: 48px;
+  }
+  .links {
+    display: grid;
+    gap: 12px;
+  }
+  .link-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    background: var(--zinc-900);
+    border: 1px solid var(--zinc-800);
+    border-radius: 14px;
+    text-decoration: none;
+    color: var(--zinc-50);
+    transition: border-color .15s ease;
+  }
+  .link-card:hover { border-color: var(--zinc-700); }
+  .link-card .title { font-weight: 600; font-size: 15px; }
+  .link-card .desc { color: var(--zinc-500); font-size: 13px; margin-top: 2px; }
+  .link-card .arrow { color: var(--zinc-500); font-size: 18px; }
+  footer {
+    margin-top: 80px;
+    padding-top: 24px;
+    border-top: 1px solid var(--zinc-800);
+    color: var(--zinc-500);
+    font-size: 12px;
+    letter-spacing: 0.3px;
+  }
+  footer a { color: var(--zinc-400); text-decoration: none; }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="brand">
+      <div class="brand-mark"></div>
+      <div class="brand-name">Hanlimworld</div>
+    </div>
+    <h1>법적 고지</h1>
+    <p class="subtitle">한림월드 앱의 이용약관 및 개인정보처리방침 문서입니다.</p>
+    <div class="links">
+      <a class="link-card" href="./terms.html">
+        <div>
+          <div class="title">이용약관</div>
+          <div class="desc">서비스 이용 조건 및 회원의 권리·의무</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+      <a class="link-card" href="./privacy.html">
+        <div>
+          <div class="title">개인정보처리방침</div>
+          <div class="desc">개인정보 수집·이용·보관 및 이용자 권리</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+    <footer>
+      © 2026 Hanlimworld · Contact:
+      <a href="mailto:support@hanlimworld.com">support@hanlimworld.com</a>
+    </footer>
+  </div>
+</body>
+</html>
